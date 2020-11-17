@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Montserrat:300,400|Roboto:300,400&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 10px;
+      font-family: "Lato", Arial, sans-serif;
+}
+
+body {
+      background:  #fff;
+}
+
+/*Navigacija*/
+
+.logo {
+      position: fixed;
+      float: left;
+      margin: 10px 60px;
+      z-index: 1;
+}
+
+.logo a img {
+      width: 50px;
+      height: 50px;
+      overflow: visible;
+}
+
+.social {
+      opacity: 0.9;
+      float: right;
+      cursor: pointer;
+      color: #fff;
+      position: absolute;
+      top: 3px;
+      right: 10%;
+      font-size: 25px;
+      letter-spacing: 2px;
+      z-index: 1;
+}
+
+.social a:link,
+.social a:active,
+.social a:visited {
+      color: #fff;
+}
+
+.social a:hover {
+      color: #C49948;
+}
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 67px;
+      z-index: 1;
+}
+
+nav ul {
+      line-height: 30px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+
+}
+
+nav.overflow ul {
+      background: #3c5572;
+      transition: 1s;
+      width: 100%;
+      opacity: 0.9;
+}
+
+
+nav ul li {
+      display: inline-block;
+      padding: 20px 30px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      font-weight: bold;
+}
+
+nav ul li a:before {
+      content: ' ';
+      width: 0px;
+      height:7px;
+      background:#C49948;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: .5s;
+}
+
+nav ul li:hover a:before {
+      width: 50%;
+      transform: translateX(100%);
+}
+
+/*Hamburger menu za mobilnu verziju*/
+.menu-icon {
+      z-index:1;
+      line-height: 60px;
+      width: 100%;
+      background: #3c5572;
+      opacity: 0.9;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+/*Land page - pocetna*/
+
+
+.land-page {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(-225deg, rgba(48,46,47, 0.4) 0%, 
+      rgba(156,147,151, 0.4)),
+      url("../images/lh1.jpg") center no-repeat;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+}
+
+.land-page-title {
+      width: 100%;
+      position: absolute;
+      margin-top: 225px;
+      text-align: center;
+      text-transform: uppercase;
+      overflow: hidden;
+}
+
+.land-page-title h1 {
+      font-size: 56px;
+      letter-spacing: 16px;
+      margin-right: -16px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+}
+
+.land-page-title img{ 
+      height: 200px;
+      width: 200px;
+      margin-right: -16px;
+}
+
+/*Usluga sa karticama*/
+
+.card-navigation {
+      width: 94%;
+      margin: 64px auto;
+      font-size: 20px;
+      line-height: 30px;
+      scroll-margin-top: 120px;
+}
+
+.card-services {
+      padding: 0 60px;
+      background:#fff;
+      position: relative;
+      width: 100%;
+}
+
+.card-services h2 {
+      font-size: 59px;
+      font-weight: 300px;
+      letter-spacing: 0.7px;
+      line-height: 65px;
+      text-align: center;
+      font-family: 'Alice', serif;
+      color: #C49948;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+}
+
+.motto {
+      margin: 17px 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-style: italic;
+      line-height: 25px;
+      text-align: center;
+      color: #7a7a7a;
+}
+
+.card-container {
+      margin: 50px 0;
+      padding: 20px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+}
+
+
+.card-article {
+    flex: 0 1 24%;
+
+}
+
+.card-article img {
+      transition: transform .2s;
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin: auto;
+      }
+
+.card-article img:hover {
+      transform: scale(1.1);
+}
+
+.card-article h3 {
+      margin: 20px 0 15px 0;
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #303030;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+}
+
+.card-article p {
+      font-family: 'Alice';
+      font-size: 15px;
+      text-align: center;
+      color: #a7a7a7;
+}
+
+/*O nama*/
+
+.about {
+      background: url(../images/abg2.jpg);
+      background-size: cover;
+      position: relative;
+      width: 100%;
+      height: 350px;
+      box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.6);
+      margin-bottom: 80px;
+}
+
+.about-content {  
+      margin: 50px auto;
+      height: 250px;
+      width: 94%;
+      position: relative;
+      scroll-margin-top: 150px;      
+}
+
+.about-content h2 {
+      margin: 50px;
+      padding-top: 75px;
+      display: block;
+      font-family: 'Alice', serif;
+      font-size: 46px;
+      text-align: center;
+      color: #fff;
+      text-shadow: rgba(0,0,0.55) 0px 0px 10px;
+      position: relative;
+}
+
+.about-content p {
+      font-family: 'Montserrat';
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      display: block;
+      position: relative;
+      width: 80%;
+      margin-left: 11%;
+}
+
+/*Usluga detaljno*/
+
+.services-heading {
+      margin: 90px 0 10px 0;
+      padding: 0 100px;
+      position: relative;
+}
+
+.services-heading h2{
+      font-size: 59px;
+      letter-spacing: 0.7px;
+      line-height: 65px;
+      text-align: center;
+      font-family: 'Alice', serif;
+      color: #454443;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+      margin-top: -31px;
+      padding: 10px 0px;
+      scroll-margin-top: -50px;
+}
+
+.services-heading hr{
+      overflow: visible;
+      height: 30px;
+      border-style: solid;
+      color: black;
+      border-width: 1px 0 0 0;
+      border-radius: 20px;
+      opacity: .4;
+}
+
+.services-heading hr:before {
+      display: block;
+      content: "";
+      height: 30px;
+      margin-top: -31px;
+      border-style: solid;
+      border-color: black;
+      border-width: 0 0 1px 0;
+      border-radius: 20px;
+}
+
+.services {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.services-content {
+      justify-content: center;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 20px;
+}
+
+.services-content .services-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      box-sizing: border-box;
+      padding: 0px 40px;
+}
+
+.services-content .services-description h2{
+      font-family: 'Roboto', sans-serif;
+      font-size: 55px;
+      letter-spacing: -3px;
+      line-height: 58px;
+      text-align: center;
+      display: block;
+      color: #454443;
+}
+
+.services-content .services-description p {
+      margin: 26px 0;
+      font-size: 20px;
+      color: #a7a7a7;
+      line-height: 25px;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: justify;
+
+}
+
+.services-content .services-description .gold {
+      color: #C49948;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+}
+
+.services-content .services-description .green {
+      color: #016e5a;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+}
+
+.services-content .services-description .red {
+      color: #cb494b;
+      text-shadow: rgba(0, 0, 0, 0.3) -1px 4px 6px;
+}
+
+.services-content .services-image {
+      position: relative;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      width: 550px;
+      height: 550px;
+      margin-top: 50px;
+}
+
+.services-content .services-image img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+
+/*Kontakt*/
+
+.contact {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(../images/mailbo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      scroll-margin-top: 100px;
+}
+
+.contact .services-description h2{
+      text-align: left;
+      letter-spacing: -2px;
+      line-height: 58px;
+      color: #fff;
+      font-weight: 300;
+}
+
+.contact .services-description p {
+      color: #fff;
+      opacity: .6;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      line-height: 30px;
+      width: 90%;
+}
+
+.contact .visit-us h3{
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: left;
+      color: #fff;
+      letter-spacing: 3px;
+      margin-top: 20px;
+}
+
+.contact  .visit-us p{
+      margin: 10px 0;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: left;
+      color: #fff;
+}
+
+.contact .services-content .contact-form {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px;
+      height: 550px;
+}
+
+.form-group .form-line {
+      font-size: 24px;
+      padding: 10px 35px;
+      margin: 20px 0 20px 0;
+      background-color: #fff;
+      opacity: .6;
+      border: none;
+      border-bottom: 3px solid transparent;
+      width: 100%;
+      transition: all .3s;
+}
+
+.form-group .form-line:focus {
+      outline: none;
+      box-shadow: 0 5px 15px rgba(179, 179, 216, 0.712);
+      border-bottom: 3px solid #55c57a;
+}
+
+.form-group .form-line:focus:invalid {
+    border-bottom: 3px solid #FF0000;
+}
+
+.submit {
+      background: rgba(255, 255, 255, 0.6);
+      border-color: transparent;
+      color: #000;
+      font-size: 20px;
+      letter-spacing: 2px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 55px;
+      padding: 0 25%;
+}
+
+.submit:hover {
+      background-color: #3c5572;
+      color: #fff;
+      cursor: pointer;
+}
+
+/*Footer*/
+
+.footer {
+      margin: 0;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      background: #3c5572;
+      position: relative;
+      flex: 0 1 24%; 
+}
+
+.footer-logo {
+      position: relative;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      width: 120px;
+      top: 10px;
+}
+
+.footer-logo img {
+      width: 100px;
+      height: 100px;
+}
+
+.footer .footer-logo {
+      margin: 0;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+}
+
+.footer .footer-logo img {
+      width: 150px;
+      height: 150px;
+}
+
+.footer .footer-center {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 30%;
+
+}
+
+.footer-h {
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 20px;
+      position: absolute;
+}
+
+.footer .footer-center .footer-social {
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+
+}
+.footer .footer-center .footer-social i{
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      line-height: 42px;
+      margin: 5px 5px;
+ }
+
+ .footer .footer-social i:hover {
+      color: #C49948;
+ }
+
+ .footer .footer-social p {
+      position: relative; 
+ }
+
+.footer .footer-social a:link,
+.footer .footer-social a:active,
+.footer .footer-social a:visited {
+      color: #fff;
+}
+
+.footer .footer-social a:hover {
+      color: #123412;
+}
+
+.footer .footer-right {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      width: 30%;
+
+}
+
+.footer-right .inline {
+      margin-top: 35px;
+      justify-content: left;
+      text-align: left;
+}
+
+.footer-right .inline-l {
+      display:flex;
+      justify-content: left;
+      align-content: left;
+      align-items: left;
+
+}
+
+.footer .footer-right i {
+      color: #ffffff;
+      font-size: 20px;
+      text-align: left;
+      margin: 0 15px 10px 0;
+      position: relative;
+      line-height: 30px;
+}
+
+.footer-right i:hover {
+      color: #C49948;
+}
+
+.footer .footer-right p,
+.footer .footer-right p a {
+      color: #ffffff;
+      margin: 5px 0;
+      font-size: 14px;
+      font-family: 'Roboto';
+}
+
+.footer-right p:hover,
+.footer-right a:hover {
+      color: #C49948;
+} 
+
+.footer-right a {
+      text-decoration: none;
+}
+
+.footer-right .inline-l a:hover {
+      color: #C49948;
+}

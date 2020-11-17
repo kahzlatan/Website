@@ -1,0 +1,268 @@
+@media (max-width: 786px) {
+
+      /*Navigacija*/
+      .logo {
+            position: fixed;
+            top: 5px;
+            left: 35px;
+            margin: 0;
+      }
+
+      .social {
+            display: none;
+      }
+      nav ul {
+            position: absolute;
+            max-height: 0px;
+            background: #3c5572;
+            opacity: .9;
+            line-height: 60px;
+      }
+      nav ul, nav:active ul {
+            z-index: 3;
+
+      }
+      .showing {
+            max-height: 34em; 
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border:1px solid #405a80;
+
+      }
+
+      .menu-icon {
+            display: block;
+            line-height: 30px;
+      }    
+
+      /*Land page */
+
+      .land-page {
+            width: 100%;     
+            background-size: cover;
+      }
+      .land-page-title h1 {
+            font-size: 45px;
+            letter-spacing: 6px;
+      }
+
+      .land-page-title img{ 
+            height: 125px;
+            width: 125px;
+      }
+
+      /*Usluga sa karticama*/
+      .card-navigation {
+            margin-top: 40px;
+      }
+
+      .card-navigation .card-services h2 {
+            font-size: 40px;
+            line-height: 50px;
+      }
+
+      .card-container {
+            align-items: center;
+            justify-content: center;
+      }
+
+      .card-article  {
+            margin-bottom: 70px;
+      }
+
+      .card-article p {
+            padding-bottom: 40px;
+      }
+
+      /*O nama*/
+
+      .about {
+            margin-top: -100px;
+      }
+
+      .about-content {
+            margin: 20px 10px 50px 0;
+      }
+
+      .about-content h2 {
+            padding-top: 20px;
+            margin: 50px 50px 30px 50px;
+      }
+
+      .about-content p {
+            width: 80%;
+            font-size: 15px;
+      }
+
+      /*Usluga*/
+
+      .services-heading h2{
+            margin: -30px auto 0px auto;
+            font-size: 45px;
+            line-height: 60px;
+            scroll-margin-top: -100px;
+      }
+
+      .services-heading {
+            padding: 10px 20px;
+            margin: 40px 0 10px 0;
+      }
+
+      .services {
+            width: 100%;
+      }
+      .services-content {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+      }
+
+      .services-content .services-description {
+            padding: 0 40px;
+            width: 100%;
+      }
+
+      .services-content .services-description h2 {
+            font-size: 45px;
+            letter-spacing: -3px;
+            line-height: 40px;
+            text-align: center;
+            color: #454443;
+            width: 90vw;
+      }
+
+      .services-content .services-image {
+            width: 355px;
+            height: 355px;
+      }
+
+      /*Kontakt*/
+
+      .contact {
+            margin-top: 40px;
+      }
+
+      .contact-form {
+            margin: 0 40px;
+      }
+
+      .contact .services-description h2{
+            color: #fff;
+            margin-top: 40px;
+      }
+
+      .contact .services-description p{
+            margin-left: 13px;
+      }
+
+      .contact .visit-us h3,
+      .contact .visit-us p{
+            text-align: center;
+      }
+
+      .submit {
+            margin-left: 35px;
+      }
+
+      /*Footer*/
+
+      .footer .services-content {
+            display: block;
+      }
+
+      .footer {
+            width: 100%;
+      }
+
+      .footer .footer-logo {
+            width: 100%;
+            flex-basis: 100%;
+            position: relative;
+      }
+
+      .footer .footer-logo img {
+            width: 100px;
+            height: 100px;
+      }
+
+      .footer-center {
+            width: 100%;
+            min-width: 99%;
+            display: block;
+            position: relative;
+            margin: 30px 0;
+      }
+
+      .footer-right {
+            width: 100%;
+            min-width: 99%;
+            display: block;
+            position: relative;   
+      }
+}
+
+@media (min-width: 787px) and (max-width: 973px) {
+
+      /*Navigacija*/
+
+      .social {right: 1%;
+      }
+
+      /*Usluga sa karticama*/
+
+      .card-navigation .card-services {
+            padding: 0px;
+      }
+
+      .card-article:nth-of-type(3) {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+      }
+
+      /*O nama*/
+
+      .about {
+            margin-top: -10%;
+      }
+
+      /*Usluga*/
+
+      .services .services-content .services-description {
+            width: 100%;
+            margin-top: -10%;
+      }
+
+      .services .services-content .services-description .services-text h2 {
+            margin-top: 30px;
+      }
+
+      .services-heading {
+            margin: 90px 0 30px 0;
+      }
+
+      .services-heading h2 {
+            scroll-margin-top: 80px;
+      }
+
+      /*Kontakt*/
+
+      .contact .services-description,
+      .contact .services-description .services-text,
+      .contact .services-description .services-text p {
+            width: 100%;
+      }
+
+      .contact .visit-us h3,
+      .contact .visit-us p,
+      .contact .services-description h2 {
+            text-align: center;
+            margin: 0px 0px;
+            width: 100%;
+      }
+
+}
